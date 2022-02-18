@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/Accordion.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1645161545304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1645161630358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,7 @@\n         <View>\n             <Text>dfasfadsfadsfdsa</Text>\n         </View>\n     )\n-}\n\\ No newline at end of file\n+}\n+\n+export default Accordion;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645161694840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Text, View } from \"react-native\"\n+import React from 'react';\n \n-\n const Accordion = () => {\n     return(\n         <View>\n             <Text>dfasfadsfadsfdsa</Text>\n"
+                }
+            ],
+            "date": 1645161545304,
+            "name": "Commit-0",
+            "content": "import { Text, View } from \"react-native\"\n\n\nconst Accordion = () => {\n    return(\n        <View>\n            <Text>dfasfadsfadsfdsa</Text>\n        </View>\n    )\n}"
+        }
+    ]
+}

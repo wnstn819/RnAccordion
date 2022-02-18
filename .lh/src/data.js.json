@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/data.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1645162194883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1645162194883,
+            "name": "Commit-0",
+            "content": "export default [\n    {\n      bg: '#A8DDE9',\n      color: '#3F5B98',\n      category: 'Healthcare',\n      subCategories: ['Skincare', 'Personal care', 'Health', 'Eye care'],\n    },\n    {\n      bg: '#086E4B',\n      color: '#FCBE4A',\n      category: 'Food & Drink',\n      subCategories: [\n        'Fruits & Vegetables',\n        'Frozen Food',\n        'Bakery',\n        'Snacks & Desserts',\n        'Beverages',\n        'Alcoholic beverages',\n        'Noodles & Pasta',\n        'Rice & Cooking oil',\n      ],\n    },\n    {\n      bg: '#FECBCA',\n      color: '#FD5963',\n      category: 'Beauty',\n      subCategories: ['Skincare', 'Makeup', 'Nail care', 'Perfume'],\n    },\n    {\n      bg: '#193B8C',\n      color: '#FECBCD',\n      category: 'Baby & Kids',\n      subCategories: [\n        'Toys',\n        'Trolleys',\n        'LEGO®',\n        'Electronics',\n        'Puzzles',\n        'Costumes',\n        'Food',\n        'Hygiene & Care',\n        \"Child's room\",\n        'Feeding accessories',\n      ],\n    },\n    {\n      bg: '#FDBD50',\n      color: '#F5F5EB',\n      category: 'Homeware',\n      subCategories: [\n        'Air purifiers',\n        'Stoves, hoods & ovens',\n        'Refrigerators',\n        'Coffee & Tea',\n        'Air conditioning',\n        'Grilling',\n        'Vacuum cleaners',\n      ],\n    },\n  ];"
+        }
+    ]
+}

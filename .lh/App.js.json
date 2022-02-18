@@ -1,0 +1,42 @@
+{
+    "sourceFile": "App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1645161612174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1645161666399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,35 +25,10 @@\n   LearnMoreLinks,\n   ReloadInstructions,\n } from 'react-native/Libraries/NewAppScreen';\n \n-const Section = ({children, title}): Node => {\n-  const isDarkMode = useColorScheme() === 'dark';\n-  return (\n-    <View style={styles.sectionContainer}>\n-      <Text\n-        style={[\n-          styles.sectionTitle,\n-          {\n-            color: isDarkMode ? Colors.white : Colors.black,\n-          },\n-        ]}>\n-        {title}\n-      </Text>\n-      <Text\n-        style={[\n-          styles.sectionDescription,\n-          {\n-            color: isDarkMode ? Colors.light : Colors.dark,\n-          },\n-        ]}>\n-        {children}\n-      </Text>\n-    </View>\n-  );\n-};\n \n-const App: () => Node = () => {\n+const App = () => {\n   const isDarkMode = useColorScheme() === 'dark';\n \n   const backgroundStyle = {\n     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,\n"
+                },
+                {
+                    "date": 1645161742770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     <SafeAreaView style={backgroundStyle}>\n       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />\n       <ScrollView\n         contentInsetAdjustmentBehavior=\"automatic\"\n-        style={backgroundStyle}>\n+        style={[backgroundStyle,{flex:1}]}>\n        <Accordion/>\n       </ScrollView>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1645161752349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n   };\n \n   return (\n     <SafeAreaView style={backgroundStyle}>\n-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />\n+      \n       <ScrollView\n         contentInsetAdjustmentBehavior=\"automatic\"\n         style={[backgroundStyle,{flex:1}]}>\n        <Accordion/>\n"
+                },
+                {
+                    "date": 1645161757495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     <SafeAreaView style={backgroundStyle}>\n       \n       <ScrollView\n         contentInsetAdjustmentBehavior=\"automatic\"\n-        style={[backgroundStyle,{flex:1}]}>\n+        style={[backgroundStyle,{flex:0}]}>\n        <Accordion/>\n       </ScrollView>\n     </SafeAreaView>\n   );\n"
+                },
+                {
+                    "date": 1645161778097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,\n   };\n \n   return (\n-    <SafeAreaView style={backgroundStyle}>\n+    <SafeAreaView style={[backgroundStyle,{flex:1}]}>\n       \n       <ScrollView\n         contentInsetAdjustmentBehavior=\"automatic\"\n         style={[backgroundStyle,{flex:0}]}>\n"
+                },
+                {
+                    "date": 1645161783346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     <SafeAreaView style={[backgroundStyle,{flex:1}]}>\n       \n       <ScrollView\n         contentInsetAdjustmentBehavior=\"automatic\"\n-        style={[backgroundStyle,{flex:0}]}>\n+        style={[backgroundStyle,{flex:1}]}>\n        <Accordion/>\n       </ScrollView>\n     </SafeAreaView>\n   );\n"
+                }
+            ],
+            "date": 1645161612174,
+            "name": "Commit-0",
+            "content": "/**\n * Sample React Native App\n * https://github.com/facebook/react-native\n *\n * @format\n * @flow strict-local\n */\n\nimport React from 'react';\nimport Accordion from './src/Accordion';\nimport {\n  SafeAreaView,\n  ScrollView,\n  StatusBar,\n  StyleSheet,\n  Text,\n  useColorScheme,\n  View,\n} from 'react-native';\n\nimport {\n  Colors,\n  DebugInstructions,\n  Header,\n  LearnMoreLinks,\n  ReloadInstructions,\n} from 'react-native/Libraries/NewAppScreen';\n\nconst Section = ({children, title}): Node => {\n  const isDarkMode = useColorScheme() === 'dark';\n  return (\n    <View style={styles.sectionContainer}>\n      <Text\n        style={[\n          styles.sectionTitle,\n          {\n            color: isDarkMode ? Colors.white : Colors.black,\n          },\n        ]}>\n        {title}\n      </Text>\n      <Text\n        style={[\n          styles.sectionDescription,\n          {\n            color: isDarkMode ? Colors.light : Colors.dark,\n          },\n        ]}>\n        {children}\n      </Text>\n    </View>\n  );\n};\n\nconst App: () => Node = () => {\n  const isDarkMode = useColorScheme() === 'dark';\n\n  const backgroundStyle = {\n    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,\n  };\n\n  return (\n    <SafeAreaView style={backgroundStyle}>\n      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />\n      <ScrollView\n        contentInsetAdjustmentBehavior=\"automatic\"\n        style={backgroundStyle}>\n       <Accordion/>\n      </ScrollView>\n    </SafeAreaView>\n  );\n};\n\nconst styles = StyleSheet.create({\n  sectionContainer: {\n    marginTop: 32,\n    paddingHorizontal: 24,\n  },\n  sectionTitle: {\n    fontSize: 24,\n    fontWeight: '600',\n  },\n  sectionDescription: {\n    marginTop: 8,\n    fontSize: 18,\n    fontWeight: '400',\n  },\n  highlight: {\n    fontWeight: '700',\n  },\n});\n\nexport default App;\n"
+        }
+    ]
+}
